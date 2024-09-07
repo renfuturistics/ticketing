@@ -162,49 +162,51 @@ const Home: React.FC = () => {
 
       {/* Testimonials Section */}
       <Container maxWidth="lg" sx={{ marginTop: '4rem', marginBottom: '4rem' }}>
-        <Typography variant="h4" component="h2" textAlign="center" gutterBottom>
-          What Our Customers Say
-        </Typography>
+  <Typography variant="h4" component="h2" textAlign="center" gutterBottom>
+    What Our Customers Say
+  </Typography>
 
-        <Grid container spacing={4} sx={{ marginTop: '2rem' }}>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="body1" gutterBottom>
-                  "The booking process was so smooth and easy. I’ll definitely use this service again!"
-                </Typography>
-                <Typography variant="subtitle2" color="textSecondary">
-                  - Jane Doe
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="body1" gutterBottom>
-                  "Excellent service and on-time departures. Highly recommend!"
-                </Typography>
-                <Typography variant="subtitle2" color="textSecondary">
-                  - John Smith
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="body1" gutterBottom>
-                  "A very convenient way to book tickets. I saved a lot of time."
-                </Typography>
-                <Typography variant="subtitle2" color="textSecondary">
-                  - Alice Johnson
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        </Grid>
-      </Container>
+  <Grid container spacing={4} sx={{ marginTop: '2rem' }}>
+    <Grid item xs={12} sm={4}>
+      <Card>
+        <CardContent>
+          <Typography variant="body1" gutterBottom>
+            &quot;The booking process was so smooth and easy. I&apos;ll definitely use this service again!&quot;
+          </Typography>
+          <Typography variant="subtitle2" color="textSecondary">
+            - Jane Doe
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+    <Grid item xs={12} sm={4}>
+      <Card>
+        <CardContent>
+          <Typography variant="body1" gutterBottom>
+            &quot;Excellent service and on-time departures. Highly recommend!&quot;
+          </Typography>
+          <Typography variant="subtitle2" color="textSecondary">
+            - John Smith
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+    <Grid item xs={12} sm={4}>
+      <Card>
+        <CardContent>
+          <Typography variant="body1" gutterBottom>
+            &quot;A very convenient way to book tickets. I saved a lot of time.&quot;
+          </Typography>
+          <Typography variant="subtitle2" color="textSecondary">
+            - Alice Johnson
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+  </Grid>
+</Container>
+
+
 
    
     </Box>
