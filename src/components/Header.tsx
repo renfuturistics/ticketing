@@ -114,12 +114,7 @@ const Header: React.FC = () => {
               <Typography variant="h6" component="div" sx={{ flexGrow: isMobile ? 1 : 0 }}>
                 <Link href="/" passHref>
                   <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-                    <Image
-                      src="/logo.png" // Replace with the actual logo image path
-                      alt="Bus Ticketing Logo"
-                      width={40}
-                      height={40}
-                    />
+                  
                     <Typography variant="h6" sx={{ marginLeft: '0.5rem', color: theme.palette.text.primary }}>
                       Bus Ticketing
                     </Typography>
