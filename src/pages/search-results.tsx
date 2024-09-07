@@ -13,7 +13,7 @@ const mockBusData = [
     departure: '08:00 AM',
     arrival: '12:00 PM',
     duration: '4h',
-    price: '$15',
+    price: 'K15',
     from: 'City A',
     to: 'City B',
   },
@@ -23,7 +23,7 @@ const mockBusData = [
     departure: '09:00 AM',
     arrival: '01:30 PM',
     duration: '4h 30m',
-    price: '$20',
+    price: 'K20',
     from: 'City A',
     to: 'City B',
   },
@@ -33,7 +33,7 @@ const mockBusData = [
     departure: '10:00 AM',
     arrival: '02:00 PM',
     duration: '4h',
-    price: '$18',
+    price: 'K18',
     from: 'City A',
     to: 'City B',
   },
@@ -44,7 +44,7 @@ const SearchResults: React.FC = () => {
   const { from, to, date } = router.query;
 
   const handleBookNow = (id: number) => {
-    router.push(`/book/${id}`);
+    router.push(`/book/K{id}`);
   };
 
   return (
@@ -71,7 +71,7 @@ const SearchResults: React.FC = () => {
               }}
             >
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <DirectionsBusIcon sx={{ fontSize: '2.5rem', color: '#007bff', marginRight: '1rem' }} />
+                <DirectionsBusIcon color='primary' sx={{ fontSize: '2.5rem', marginRight: '1rem' }} />
                 <Box>
                   <Typography variant="h6" component="h2" sx={{ fontWeight: '600', color: '#333' }}>
                     {bus.company}
@@ -86,7 +86,7 @@ const SearchResults: React.FC = () => {
               </Box>
 
               <Box sx={{ textAlign: 'right' }}>
-                <Typography variant="h6" component="h3" sx={{ fontWeight: '600', color: '#333' }}>
+                <Typography variant="h6" component="h3" sx={{ fontWeight: '600',  }}>
                   {bus.price}
                 </Typography>
                 <Button
@@ -98,7 +98,7 @@ const SearchResults: React.FC = () => {
                     borderRadius: '20px',
                     padding: '0.5rem 1.5rem',
                     marginTop: '0.5rem',
-                    backgroundColor: '#007bff',
+                   
                     '&:hover': { backgroundColor: '#0056b3' },
                   }}
                   onClick={() => handleBookNow(bus.id)}
