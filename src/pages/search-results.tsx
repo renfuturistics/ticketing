@@ -49,7 +49,7 @@ const SearchResults: React.FC = () => {
 
   return (
     <Container maxWidth="md" sx={{ marginTop: '2rem', padding: '0 2rem' }}>
-      <Typography variant="h4" component="h1" gutterBottom textAlign="center" sx={{ fontWeight: '600', color: '#333' }}>
+      <Typography variant="h4" component="h1" gutterBottom textAlign="center" sx={{ fontWeight: '600', }}>
         Bus Search Results
       </Typography>
       <Typography variant="body1" gutterBottom textAlign="center" color="textSecondary">
