@@ -8,8 +8,10 @@ import BusAlertIcon from '@mui/icons-material/BusAlert';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import SearchBuses from '@/components/SearchBuses';
+import { useRouter } from 'next/router';
 
 const Home: React.FC = () => {
+  const router = useRouter()
   return (
     <Box>
       {/* Hero Section */}
@@ -49,6 +51,9 @@ const Home: React.FC = () => {
             variant="contained"
             color="primary"
             size="large"
+            onClick={()=>{
+             router.push('/view-routes')
+            }}
             sx={{ marginTop: '2rem', textTransform: 'none', borderRadius: '25px', transition: 'background 0.3s ease', '&:hover': { backgroundColor: '#1f2937' } }}
           >
             Get Started
@@ -56,8 +61,7 @@ const Home: React.FC = () => {
         </Container>
       </Box>
 
-      {/* Search Form */}
-     <SearchBuses/>
+   
 
       {/* Featured Buses */}
       <Container maxWidth="lg" sx={{ marginTop: '4rem' }}>
