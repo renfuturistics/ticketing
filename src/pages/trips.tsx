@@ -179,7 +179,7 @@ const TripsPage: React.FC = () => {
               ))}
             </Select>
             <FormHelperText>
-              Select the stop where you will get off. Make sure it's the right one.
+              Select the stop where you will get off. Make sure its the right one.
             </FormHelperText>
           </FormControl>
 
