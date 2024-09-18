@@ -112,11 +112,11 @@ const Header: React.FC = () => {
             >
               {/* Logo */}
               <Typography variant="h6" component="div" sx={{ flexGrow: isMobile ? 1 : 0 }}>
-                <Link href="/" passHref>
+                <Link href="/" passHref style={{textDecoration:"none" }}>
                   <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
                   
-                    <Typography variant="h6" sx={{ marginLeft: '0.5rem', color: theme.palette.text.primary }}>
-                      Bus Ticketing
+                    <Typography variant="h6" sx={{ marginLeft: '0.5rem', color: theme.palette.text.primary,}}>
+                  UBZ APP
                     </Typography>
                   </Box>
                 </Link>

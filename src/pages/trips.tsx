@@ -14,7 +14,7 @@ interface Trip {
 
 const fetchTripsByRouteId = async (routeId: string) => {
   try {
-    const response = await axios.get(`http://localhost:8888/api/trip/route/${routeId}`);
+    const response = await axios.get(`https://ubz-backend.vercel.app/api/trip/route/${routeId}`);
     return response.data; // List of trips
   } catch (error) {
     console.error('Error fetching trips:', error);
@@ -67,13 +67,13 @@ const TripsPage: React.FC = () => {
 
     try {
       // Send booking request to the server
-      const response = await axios.post('http://localhost:8888/api/booking', {
+      const response = await axios.post('https://ubz-backend.vercel.app/api/booking', {
         trip: selectedTrip!._id,
         boardingStop,
         alightingStop,
         seatsBooked: seats,
         price: 50 * seats, // Assuming a fixed price per seat for now
-        passenger: 'somePassengerId', // Replace with the actual passenger ID
+        passenger: '66e99a012824e79663c4f8a6', // Replace with the actual passenger ID
         paymentStatus: 'pending',
       });
 

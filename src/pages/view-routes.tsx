@@ -28,7 +28,7 @@ const ViewRoutesPage: React.FC = () => {
   useEffect(() => {
     const fetchRoutes = async () => {
       try {
-        const response = await axios.get('http://localhost:8888/api/routes'); // Replace with your API endpoint
+        const response = await axios.get('https://ubz-backend.vercel.app/api/routes'); // Replace with your API endpoint
     
         setRoutes(response.data);
       } catch (error) {
